@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(136, 134, 134);
+    margin-left: 10pxpx;
+    margin-right: 10pxpx;
+    padding: 0px;
+}
+
+header{
+   color: red;
+   font-family:'Times New Roman', Times, serif;
+   background-color: rgb(0, 0, 0);
+}
+
+header h1{
+    font-size: 50px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1rf;
+}
+
+nav a{
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+      color: crimson;
+}
+
+main{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+/* PRINCIPAIS PERSONAGENS */
+
+.mainCharacters{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    gap:10px;
+}
+
+.cardMainCharacters{
+    background: #1e1e1e;
+    border: 3px solid #747272;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cardMainCharacters img{
+    margin: 30px;
+    padding: 20px;
+    width: 200px;
+    height: 350px;
+    border-radius: 30px;    
+}
+
+.cardMainCharacters p{
+    font-size:20px;
+    margin: 0px ;
+    padding: 10px;
+    word-break:normal;
+}
+
+/* BANDO DO FALCÃO */
+
+.falconFlock{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.cardFalconFlockCharacters{
+    background: #1e1e1e;
+    border: 3px solid #747272;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* A MÃO DE DEUS */
+
+.handGod{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.cardHandGodCharacters{
+    background: #1e1e1e;
+    border: 3px solid #747272;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* RODAPÉ */
+
+footer{
+    font-size: 15px;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #4d4b4b;
+}
+
+
+
+
+
