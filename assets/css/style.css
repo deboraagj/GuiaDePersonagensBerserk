@@ -1,167 +1,230 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(136, 134, 134);
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
-header{
-   color: red;
-   font-family:'Times New Roman', Times, serif;
-   background-color: rgb(0, 0, 0);
-   text-align: left;
-   margin-bottom: 20px;
+header {
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 15px;
 }
 
-header h1{
-    font-size: 500%;
+header h1 {
+    font-size: clamp(2rem, 8vw, 4rem);
 }
 
-nav{
+nav {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
 }
 
-nav a{
-    text-decoration: none;
-    color: #eee;
+nav a {
+    text-decoration:none;
+    color:white;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav a:hover {
-      color: crimson;
+    color: crimson;
+    transform: scale(1.05);
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10px;
 }
 
 /* PRINCIPAIS PERSONAGENS */
 
-.mainCharacters{
+.mainCharacters {
     flex: 1;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
     color: white;
-    gap:10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
-.cardMainCharacters{
+.cardMainCharacters {
     flex: 1;
     background: #1e1e1e;
     border: 3px solid #666363;
     border-radius: 10px;
-    width: 400px;
-}
-
-.cardMainCharacters:hover{
-    transform: scale(1.05);
+    max-width: 400px;
     transition: transform 0.3s;
 }
 
-.cardMainCharacters img{
-    margin: 10px;
-    padding: 10px;
-    width: 350px;
-    height: 650px;
-    border-radius: 30px;    
+.cardMainCharacters:hover {
+    transform: scale(1.05);
 }
 
-.cardMainCharacters p{
-    font-size:20px;
-    margin: 0px ;
+.cardMainCharacters img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
     padding: 10px;
-    word-break:normal;
+}
+
+.cardMainCharacters p {
+    font-size: 18px;
+    padding: 10px;
 }
 
 /* BANDO DO FALCÃO */
 
-.falconFlock{
+.falconFlock {
     flex: 1;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
     color: white;
-    gap: 6px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
-.cardFalconFlockCharacters{
-    flex: 1;
+.cardFalconFlockCharacters {
+    flex: 1 1 200px;
     background: #1e1e1e;
     border: 3px solid #747272;
     border-radius: 10px;
-    width: 250px;
-}
-
-.cardFalconFlockCharacters:hover{
-    transform: scale(1.05);
+    max-width: 250px;
     transition: transform 0.3s;
 }
 
-.cardFalconFlockCharacters img{
-    margin: 10px;
+.cardFalconFlockCharacters:hover {
+    transform: scale(1.05);
+}
+
+.cardFalconFlockCharacters img {
+    width: 100%;
+    height:auto
+    border-radius: 15px;
     padding: 10px;
-    width: 200px;
-    height: 350px;
-    border-radius: 30px; 
 }
 
 /* A MÃO DE DEUS */
 
-.handGod{
+.handGod {
     flex: 1;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
     color: white;
-    gap: 5px;
 }
 
-.cardHandGodCharacters{
+.cardHandGodCharacters {
     flex: 1;
     background: #1e1e1e;
     border: 3px solid #747272;
     border-radius: 10px;
-    width: 350px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.cardHandGodCharacters:hover{
-    transform: scale(1.05);
+    max-width: 350px;
     transition: transform 0.3s;
 }
 
-.cardHandGodCharacters img{
-    margin: 10px;
+.cardHandGodCharacters:hover {
+    transform: scale(1.05);
+}
+
+.cardHandGodCharacters img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
     padding: 10px;
-    width: 250px;
-    height: 450px;
-    border-radius: 30px; 
+}
+
+/* O NOVO BANDO DE GUTS */
+
+.newFlockGuts{
+    flex: 1;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center; */
+    gap: 12px;
+    margin: 20px 0;
+    color: white;
+}
+
+.cardNewFlockGutsCharacters {
+    flex: 1 1 200px;
+    background: #1e1e1e;
+    border: 3px solid #747272;
+    border-radius: 10px;
+    max-width: 250px;
+    transition: transform 0.3s;
+}
+
+.cardNewFlockGutsCharacters:hover {
+    transform: scale(1.05);
+}
+
+.cardNewFlockGutsCharacters img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 /* RODAPÉ */
 
-footer{
-    font-size: 15px;
+footer {
+    font-size: 14px;
     color: #aaa;
     text-align: center;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 15px;
     background-color: #4d4b4b;
 }
 
+/* MEDIA */
 
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
 
+    nav {
+        justify-content: center;
+    }
 
+    .cardMainCharacters p {
+        font-size: 16px;
+    }
+}
 
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
 
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
