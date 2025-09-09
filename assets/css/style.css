@@ -1,13 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: rgb(136, 134, 134);
-    margin: 0.5%;
-    padding: 0%;
 }
 
 header{
    color: red;
    font-family:'Times New Roman', Times, serif;
    background-color: rgb(0, 0, 0);
+   text-align: left;
+   margin-bottom: 20px;
 }
 
 header h1{
@@ -46,6 +51,8 @@ main{
     flex-direction: row;
     color: white;
     gap:10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .cardMainCharacters{
@@ -83,7 +90,9 @@ main{
     display: flex;
     flex-direction: row;
     color: white;
-    gap: 6px
+    gap: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .cardFalconFlockCharacters{
@@ -123,6 +132,8 @@ main{
     border: 3px solid #747272;
     border-radius: 10px;
     width: 350px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .cardHandGodCharacters:hover{
@@ -148,6 +159,7 @@ footer{
     margin-top: 5px;
     background-color: #4d4b4b;
 }
+
 
 
 
