@@ -7,15 +7,19 @@
 body {
     background-image: url('../images/background.jpg');
     background-size: cover;
-    background-attachment: fixed;  
+    background-attachment: fixed; 
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
 header {
+    display: flex;
+    flex-direction: row;
     background-image: url('../images/bersekHeader.jpg');
-    width: auto;;
-    height: 150px;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 200px;
     color: crimson;
     background-color: rgb(0, 0, 0);
     text-align: left;
@@ -24,12 +28,13 @@ header {
 }
 
 nav {
+    flex:1;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    padding: 10px;
     justify-content: flex-end;
-    padding: 50px;
+    padding: 70px;
+    padding-right: 150px;
 }
 
 nav a {
@@ -138,7 +143,7 @@ main h2{
 
 .cardFalconFlockCharacters img {
     width: 100%;
-    height:auto
+    height:auto;
     border-radius: 15px;
     padding: 10px;
 }
@@ -197,7 +202,7 @@ main h2{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: center; */
+    justify-content: center;
     gap: 10px;
     margin: 20px 0;
     color: white;
@@ -235,32 +240,24 @@ footer {
 
 /* MEDIA */
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav {
-        justify-content: center;
-    }
-
-    .cardMainCharacters p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 800px) {
 
     footer {
         font-size: 12px;
     }
+
+    header {
+        background-size: 950px;
+        background-position:inherit;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: center;
+        padding-top: 125px;
+        padding-left: 150px
+    }
 }
+
