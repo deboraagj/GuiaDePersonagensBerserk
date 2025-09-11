@@ -17,7 +17,7 @@ header {
     flex-direction: row;
     background-image: url('../images/bersekHeader.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     width: auto;
     height: 200px;
     color: crimson;
@@ -33,7 +33,8 @@ nav {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: flex-end;
-    padding: 70px;
+    align-items:inherit;
+    padding-top: 70px;
     padding-right: 150px;
 }
 
@@ -288,10 +289,10 @@ footer {
     }
 
     header {
-        background-size: 850px;
+        background-size: 810px;
         background-position:inherit;
         background-repeat: no-repeat;
-        height: 320px;
+        height: 300px;
     }
 
     nav {
@@ -306,4 +307,22 @@ footer {
         max-width: 400px;
     }
 }
+
+@media (max-width: 1365px) and (min-width: 751px) {
+
+    header {
+        background-size: 1500px;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    nav {
+        padding-top: 70px;
+        padding-right: 10px;
+        gap: 15px;
+    }
+}
+
+
+
 
