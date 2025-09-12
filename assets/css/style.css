@@ -430,7 +430,7 @@ footer {
         gap: 10px;
     }  
 
-    .cardFalconFlockCharacters, .cardHandGodCharacters, .cardNewFlockGutsCharacters {
+    .cardFalconFlockCharacters, .cardHandGodCharacters, .cardNewFlockGutsCharacters, .cardImportantCharacters, .cardImportantArtifacts {
         flex: 1 1 100%;
         max-width: 400px;
     }
