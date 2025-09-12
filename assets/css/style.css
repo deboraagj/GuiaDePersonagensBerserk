@@ -382,7 +382,7 @@ footer {
 
 /* MEDIA CELULAR NA HORIZONTAL*/
 
-@media (max-width: 915px) {
+@media (max-width: 915px) and (min-width: 413px){
 
     footer {
         font-size: 12px;
@@ -410,7 +410,7 @@ footer {
 
 /* MÉDIA CELULAR NA VERTICAL */
 
-@media (max-width: 413px){
+@media (max-width: 412px){
 
     footer {
         font-size: 12px;
