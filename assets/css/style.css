@@ -16,26 +16,24 @@ header {
     display: flex;
     flex-direction: row;
     background-image: url('../images/bersekHeader.jpg');
-    background-size: cover;
-    background-position: left;
+    background-size: 1300px ;
+    background-repeat: no-repeat;
+    background-position: left; 
     width: auto;
-    height: 200px;
-    color: crimson;
+    height: 200px; 
+    background-color: #4d4b4b;
     background-color: rgb(0, 0, 0);
-    text-align: left;
-    margin-bottom: 20px;
-    padding: 15px;
 }
 
 nav {
     flex:1;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    justify-content: flex-end;
-    align-items:inherit;
-    padding-top: 70px;
-    padding-right: 150px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 600px;
+
 }
 
 nav a {
@@ -269,6 +267,108 @@ main h2{
     text-align: center;
 }
 
+/* PERSONAGENS IMPORTANTES */
+
+.backgroundImportantCharacters {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgba(255, 0, 0, 0.3);
+}
+
+.importantCharacters {
+    flex: 1;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: white;
+}
+
+.cardImportantCharacters {
+    flex: 1 1 200px;
+    background: #1e1e1e;
+    border: 3px solid #747272;
+    border-radius: 10px;
+    max-width: 250px;
+    transition: transform 0.3s;
+}
+
+.cardImportantCharacters:hover {
+    transform: scale(1.05);
+}
+
+.cardImportantCharacters img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.cardImportantCharacters h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.cardImportantCharacters p {
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ARTEFATOS IMPORTANTES */
+
+.backgroundImportantArtifacts {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgba(255, 0, 0, 0.3);
+}
+
+.importantArtifacts {
+    flex: 1;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: white;
+}
+
+.cardImportantArtifacts {
+    flex: 1 1 200px;
+    background: #1e1e1e;
+    border: 3px solid #747272;
+    border-radius: 10px;
+    max-width: 250px;
+    transition: transform 0.3s;
+}
+
+.cardImportantArtifacts:hover {
+    transform: scale(1.05);
+}
+
+.cardImportantArtifacts img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.cardImportantArtifacts h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.cardImportantArtifacts p {
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
 /* RODAPÉ */
 
 footer {
@@ -280,26 +380,26 @@ footer {
     background-color: #4d4b4b;
 }
 
-/* MEDIA */
+/* MEDIA CELULAR NA HORIZONTAL*/
 
-@media (max-width: 750px) {
+@media (max-width: 915px) {
 
     footer {
         font-size: 12px;
     }
 
     header {
-        background-size: 950px;
+        background-size: 1750px;
         background-position:inherit;
         background-repeat: no-repeat;
-        height: 300px;
+        height: 270px;
     }
 
     nav {
-        align-items: center;
-        justify-content: center;
-        padding-top: 90px;
-        padding-left: 150px
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 190px;
+        gap: 20px;
     }
 
     .cardFalconFlockCharacters, .cardHandGodCharacters, .cardNewFlockGutsCharacters {
@@ -308,20 +408,35 @@ footer {
     }
 }
 
-@media (max-width: 1365px) and (min-width: 751px) {
+/* MÉDIA CELULAR NA VERTICAL */
+
+@media (max-width: 412px){
+
+    footer {
+        font-size: 12px;
+    }
 
     header {
-        background-size: 1500px;
+        background-size: 800px;
+        background-position:inherit;
         background-repeat: no-repeat;
-        background-position: left;
+        height: 400px; 
     }
 
     nav {
-        padding-top: 70px;
-        padding-right: 10px;
-        gap: 15px;
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 90px;
+        gap: 10px;
+    }  
+
+    .cardFalconFlockCharacters, .cardHandGodCharacters, .cardNewFlockGutsCharacters {
+        flex: 1 1 100%;
+        max-width: 400px;
     }
 }
+
+
 
 
 
